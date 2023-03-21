@@ -1,0 +1,210 @@
+jhoncoderson@Tietokone-Elias:~/ot_viikko1/tiedostoja$ git log --stat | cat
+commit ca5b621df3ae1ebd405e3bb67e70f3de4de15d05
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 23:23:25 2023 +0200
+
+    poistettiin file1 ja nimettiin uudelleen file22
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 2c9780fb98b65639a38b3bb31e15e16e5da2b3fb
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 23:19:17 2023 +0200
+
+    luotiin kolme uutta tiedostoa uuteen kansioon
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 5010d543aa3cdecb8c9644e248ca729457432511
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 23:05:19 2023 +0200
+
+    muutettiin molempia tiedostoja ja poistettiin ekasta yksi soosi
+
+ eka.txt    | 4 ++--
+ kolmas.txt | 2 ++
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+commit 7e67b1c35f7ccd72b35ab732d166f8f70b7e7bf8
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 23:02:11 2023 +0200
+
+    tiedosto ekaksi
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 62528720fd08b3e624450401a774621ae530a839
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 22:57:21 2023 +0200
+
+    postin toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 7d6831a67acb13a87a7168b31e63ac630e2045e2
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 22:53:55 2023 +0200
+
+     tiedosto.txt lisäsin soosia
+
+ tiedosto.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit f56bb83da0bd1819c5f5a2624ecaec0e8ec7cff1
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 19:19:09 2023 +0200
+
+    uusi stuff hakemisto
+
+ stuff/jokin.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit af1eb2506bc72e67eedaab5e97a1add3ba4a87d0
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 19:08:15 2023 +0200
+
+    muutettiin toista ja kolmatta
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 95f9a46c62bb47068b03966bf4c809d1b314a730
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 18:58:30 2023 +0200
+
+    lisäsin kolmannen
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 93de8dcfaff026d03ef1206d59f6328779350bda
+Author: Elias Kousa <elias.kousa@outlook.com>
+Date:   Tue Mar 21 18:43:07 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 6d141908a63c05d2b6708350703754e9d21824c3
+Author: Elias Kousa <elias.kousa@outlook.com>
+Date:   Tue Mar 21 18:31:11 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+jhoncoderson@Tietokone-Elias:~/ot_viikko1/tiedostoja$ git log --stat | cat
+commit ca5b621df3ae1ebd405e3bb67e70f3de4de15d05
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 23:23:25 2023 +0200
+
+    poistettiin file1 ja nimettiin uudelleen file22
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 2c9780fb98b65639a38b3bb31e15e16e5da2b3fb
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 23:19:17 2023 +0200
+
+    luotiin kolme uutta tiedostoa uuteen kansioon
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 5010d543aa3cdecb8c9644e248ca729457432511
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 23:05:19 2023 +0200
+
+    muutettiin molempia tiedostoja ja poistettiin ekasta yksi soosi
+
+ eka.txt    | 4 ++--
+ kolmas.txt | 2 ++
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+commit 7e67b1c35f7ccd72b35ab732d166f8f70b7e7bf8
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 23:02:11 2023 +0200
+
+    tiedosto ekaksi
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 62528720fd08b3e624450401a774621ae530a839
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 22:57:21 2023 +0200
+
+    postin toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 7d6831a67acb13a87a7168b31e63ac630e2045e2
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 22:53:55 2023 +0200
+
+     tiedosto.txt lisäsin soosia
+
+ tiedosto.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit f56bb83da0bd1819c5f5a2624ecaec0e8ec7cff1
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 19:19:09 2023 +0200
+
+    uusi stuff hakemisto
+
+ stuff/jokin.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit af1eb2506bc72e67eedaab5e97a1add3ba4a87d0
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 19:08:15 2023 +0200
+
+    muutettiin toista ja kolmatta
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 95f9a46c62bb47068b03966bf4c809d1b314a730
+Author: Herber Hoover <elias.kousa@outlook.com>
+Date:   Tue Mar 21 18:58:30 2023 +0200
+
+    lisäsin kolmannen
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 93de8dcfaff026d03ef1206d59f6328779350bda
+Author: Elias Kousa <elias.kousa@outlook.com>
+Date:   Tue Mar 21 18:43:07 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 6d141908a63c05d2b6708350703754e9d21824c3
+Author: Elias Kousa <elias.kousa@outlook.com>
+Date:   Tue Mar 21 18:31:11 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
