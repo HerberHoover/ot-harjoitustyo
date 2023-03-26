@@ -3,10 +3,10 @@
 ## Purpose of application
 
 The purpose of this application is to help users manage their finances. 
-The application provides tools to track expences, income and savings.
+The application provides tools to track expenses, income and savings.
 The application aim to simplify the process of budgeting.
 The application can be used by multiple users with each their own finances
-The data is stoared locally
+The data is stored locally
 
 ## Users
 
@@ -22,17 +22,17 @@ After a succesful login, the user is able to see their personal budget list
 ### Before logging in
 
 The user can create an username and password
-- unique username with min 4 lenght password
-The user can log in, by entering an existing username and correspondig password
-- if username or password does not match, the system will notify
+- unique username with min 4 length password
+The user can log in, by entering an existing username and corresponding password
+- if username or password does not match, the system will notify the user
 
 ### After logging in 
 
-The user is able to see their personal budget list 
-The user is able to add expences and income
-The user is able to categorixe expnces
-The user is able to view graphs regarding their finances
-The user is able to log out of the system
+The user is able to view their personal budget list 
+The user is able to add expenses and income
+The user is able to categorize expeses
+The user is able to view graphical representations of thei finances
+The user is able to log out of their account
 
 -> Further Development Ideas
 - The user can set expenses to cycle on a specified date 
