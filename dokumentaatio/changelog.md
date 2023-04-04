@@ -3,6 +3,6 @@
 - User is able to log in 
 - User is able to see a smiley face 
 - User is able to logout
-- Implemented LoginView, RegisterView, and HomeView to handle user 
+- Implemented LoginView, RegisterView, and HomeView 
 - Implemented user logic 
 
