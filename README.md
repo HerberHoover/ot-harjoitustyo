@@ -1,13 +1,5 @@
 # Expense Tracker / Budgeting App
 
-*kursivoitu*
-
-**lihavoitu**
-
-<sup>https://github.com/HerberHoover/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt </sup>
-
-<sup>https://github.com/HerberHoover/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt </sup>
-
 
 
 
@@ -15,3 +7,40 @@
 
 - [Requirements Specification](./dokumentaatio/vaatimusmaarittely.md)
 - [Work Log](./dokumentaatio/tyoaikakirjanpito.md)
+- [Changelog](./dokumentaatio/changelog.md)
+
+
+## Installation
+
+- Install dependencies:
+
+```bash
+poetry install
+```
+
+- Activate the virtual environment :
+
+```bash
+poetry shell
+```
+
+
+## Invoke tasks
+
+- To start the application, run:
+
+```bash
+poetry run invoke start
+```
+
+- To run the tests, execute:
+
+```bash
+poetry run invoke test
+```
+
+- poetry run invoke coverage-report
+
+```bash
+poetry run invoke coverage-report
+```
