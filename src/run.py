@@ -3,24 +3,24 @@ from app.user_interface import LoginView, RegisterView, HomeView
 from database import create_tables
 
 def switch_to_register():
-    root.title("Register")  # Add this line
+    root.title("Register")  
     login_view.pack_forget()
     register_view.pack(fill=tk.BOTH, expand=True)
 
 def switch_to_login():
-    root.title("Login")  # Add this line
+    root.title("Login")  
     register_view.pack_forget()
     home_view.pack_forget()
     login_view.pack(fill=tk.BOTH, expand=True)
 
 def switch_to_home():
-    root.title("Home")  # Add this line
+    root.title("Home")  
     login_view.pack_forget()
     home_view.pack(fill=tk.BOTH, expand=True)
 
 if __name__ == "__main__":
     root = tk.Tk()
-    root.title("Login")  # Add this line
+    root.title("Login") 
     root.geometry("400x400")
 
     create_tables()
