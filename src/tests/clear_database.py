@@ -1,5 +1,4 @@
 # clear_database.py
-
 from database.database import execute_query
 
 def clear_users_table():
