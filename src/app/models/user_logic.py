@@ -9,9 +9,9 @@ def login(username, password):
     if verify_user(username, password):
         messagebox.showinfo("Success", "You have successfully logged in.")
         return True
-    else:
-        messagebox.showerror("Error", "Invalid username or password.")
-        return False
+
+    messagebox.showerror("Error", "Invalid username or password.")
+    return False
 
 def register(username, password, confirm_password):
     if not username or not password or not confirm_password:
