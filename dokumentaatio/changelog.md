@@ -6,3 +6,11 @@
 - Implemented LoginView, RegisterView, and HomeView 
 - Implemented user logic 
 
+
+## week 4
+
+- cleaned run.py 
+- implemented ui_manager.py for managing the application's different views
+- user is able to add expenses
+- user is able to add income
+- the users expense and income are saved for later login
