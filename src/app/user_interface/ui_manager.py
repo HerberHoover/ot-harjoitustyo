@@ -30,8 +30,8 @@ class UIManager():
     def switch_to_home(self, user_id):
         self.root.title("Home")
         self.login_view.pack_forget()
-        self.home_view.user_id = user_id  # Update the user_id
-        self.home_view.refresh_totals()  # Refresh the totals
+        self.home_view.user_id = user_id
+        self.home_view.refresh_totals()
         self.home_view.pack(fill=tk.BOTH, expand=True)
 
 
