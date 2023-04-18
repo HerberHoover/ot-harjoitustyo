@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
-from database.user import verify_user
+from database.user import verify_user, get_user_by_username
 from app.models.user_logic import login, register
+
 
 
 class LoginView(tk.Frame):
@@ -37,9 +38,15 @@ class LoginView(tk.Frame):
         username = self.username_entry.get()
         password = self.password_entry.get()
 
-        if login(username, password):
+        user_found = verify_user(username, password)
+
+        if user_found:
+            user_data = get_user_by_username(username) 
             self.pack_forget()
-            self.switch_to_home()
+            self.switch_to_home(user_id=user_data[0]) 
+        else:
+            messagebox.showerror("Error", "Invalid username or password.")
+
 
 
     def register(self):
