@@ -2,25 +2,30 @@
 import os
 from .database import create_connection, execute_query, fetch_query
 
+def read_sql_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+    return content
+
 def create_tables():
     conn = create_connection()
-    create_users_table = '''CREATE TABLE IF NOT EXISTS users (
-                                id INTEGER PRIMARY KEY,
-                                username TEXT UNIQUE,
-                                password_hash TEXT
-                            );'''
+
+    schema_file_path = os.path.join(os.path.dirname(__file__), 'schema.sql')
+    schema_sql = read_sql_file(schema_file_path)
+
+    sql_statements = schema_sql.split(';')
 
     show_tables_query = '''SELECT name FROM sqlite_master WHERE type='table';'''
 
-    conn = create_connection()
     if conn is not None:
-        execute_query(create_users_table)
+        for statement in sql_statements:
+            if statement.strip():
+                execute_query(statement)
+
         tables = fetch_query(show_tables_query)
         print("Tables:", tables)
-        conn.close()
     else:
         print("Error! Cannot create the database connection.")
-
 
 
 if __name__ == '__main__':
