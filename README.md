@@ -48,5 +48,5 @@ poetry run invoke coverage-report
  - pylint
 
 ```bash
-poetry run invoke coverage-report
+poetry run invoke lint
 ```
