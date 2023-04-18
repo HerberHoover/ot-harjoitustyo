@@ -26,23 +26,23 @@ After a succesful login, the user is able to see their personal budget list
 
 ### Before logging in
 
-The user can create an username and password
-- unique username with min 4 length password
+The user can create an username and password (completed)
+- unique username with min 4 length password 
 
 The user can log in, by entering an existing username and corresponding password
-- if username or password does not match, the system will notify the user
+- if username or password does not match, the system will notify the user (completed)
 
 ### After logging in 
 
 The user is able to view their personal budget list 
 
-The user is able to add expenses and income
+The user is able to add expenses and income (completed)
 
 The user is able to categorize expeses
 
-The user is able to add accounts
+The user is able to add accounts (unsuccesful for now)
 
-The user is able to log out of their account
+The user is able to log out of their account (completed)
 
 -> Further Development Ideas
 - The user can set expenses to cycle on a specified date 
