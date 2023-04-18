@@ -8,7 +8,7 @@
 - [Requirements Specification](./dokumentaatio/vaatimusmaarittely.md)
 - [Work Log](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
-
+- [architecture](./dokumentaatio/arkkitehtuuri.md)
 
 ## Installation
 
@@ -40,6 +40,12 @@ poetry run invoke test
 ```
 
 - poetry run invoke coverage-report
+
+```bash
+poetry run invoke coverage-report
+```
+ 
+ - pylint
 
 ```bash
 poetry run invoke coverage-report
