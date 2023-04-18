@@ -14,3 +14,4 @@
 - user is able to add expenses
 - user is able to add income
 - the users expense and income are saved for later login
+- schema added for code
