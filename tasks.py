@@ -10,4 +10,8 @@ def test(c):
 
 @task
 def coverage_report(c):
-    c.run("pytest --cov=app --cov-report html", pty=True)
+    c.run("pytest --cov=src --cov-report=term --cov-report=html src/tests", pty=True)
+
+@task
+def lint(c):
+    c.run("pylint src", pty=True)
