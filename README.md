@@ -8,7 +8,7 @@
 - [Requirements Specification](./dokumentaatio/vaatimusmaarittely.md)
 - [Work Log](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
-- [architecture](./dokumentaatio/arkkitehtuuri.md)
+- [Architecture](./dokumentaatio/arkkitehtuuri.md)
 
 ## Installation
 
