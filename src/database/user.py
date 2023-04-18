@@ -1,3 +1,4 @@
+#user.py
 import hashlib
 from .database import execute_query, fetch_query
 
@@ -21,7 +22,5 @@ def verify_user(username, password):
     user = get_user_by_username(username)
     if user:
         password_hash = hashlib.sha256(password.encode()).hexdigest()
-        print(f'user: {user}')
-        print(f'password_hash: {password_hash}')
         return user[2] == password_hash
     return False
