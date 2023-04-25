@@ -4,3 +4,4 @@ __pycache__
 htmlcov
 muistio.txt
 test.db
+delete_transactions.py
