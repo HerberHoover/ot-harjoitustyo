@@ -1,3 +1,4 @@
+ --- schema.sql
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY,
     username TEXT UNIQUE,
@@ -21,13 +22,12 @@ CREATE TABLE IF NOT EXISTS categories (
 
 CREATE TABLE IF NOT EXISTS transactions (
     id INTEGER PRIMARY KEY,
-    user_id INTEGER,
+    user_id INTEGER NOT NULL,
     category_id INTEGER,
-    amount DECIMAL(10,2),
-    date TEXT,
+    amount DECIMAL(10,2) NOT NULL,
+    date DATETIME WITH TIME ZONE,
     description TEXT,
-    type TEXT CHECK(type IN ('expense', 'income')),
+    type TEXT NOT NULL CHECK(type IN ('expense', 'income')),
     FOREIGN KEY (user_id) REFERENCES users (id),
     FOREIGN KEY (category_id) REFERENCES categories (id)
 );
-
