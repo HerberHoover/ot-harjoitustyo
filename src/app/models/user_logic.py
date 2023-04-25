@@ -1,3 +1,4 @@
+# user_logic.py
 from tkinter import messagebox
 from database.user import verify_user, create_user
 
