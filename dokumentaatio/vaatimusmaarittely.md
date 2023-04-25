@@ -20,7 +20,7 @@ The application only has one user role, which can manage their personal finances
 
 The application opens with a login screen from where you can login or go to register screen
 
-After a succesful login, the user is able to see their personal budget list
+After a succesful login, the user is able to see their personal budget list (completed)
 
 ## Basic Functionality Provided By The Application
 
@@ -34,7 +34,7 @@ The user can log in, by entering an existing username and corresponding password
 
 ### After logging in 
 
-The user is able to view their personal budget list 
+The user is able to view their personal budget list (completed)
 
 The user is able to add expenses and income (completed)
 

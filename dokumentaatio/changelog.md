@@ -15,3 +15,13 @@
 - user is able to add income
 - the users expense and income are saved for later login
 - schema added for code
+
+## week 5
+
+- implemented get_transactions method to fetch and display transaction data
+- extended add_income and add_expense methods in the BalanceController
+- get_all_expense_transactions and all income transactions functions to retrieve all transactions for a specific user.
+- modified schema
+- register and login_view touch up
+- home_view created treeview widget and refresh_transactions 
+- got started on categories with categories controller and categories adding function

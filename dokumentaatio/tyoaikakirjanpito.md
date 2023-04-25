@@ -16,3 +16,10 @@
 |13.4.|  0.5 | Completed transaction tests |
 |14.4.|    1 | from problmes in testing to succesful testing  |
 |18.4.|    2 | miscellaneous tasks in the end  |
+|22.4.|    1 | extended add_income and add_expense methods |
+|24.4.|    2 | Completed balance controller |
+|24.4.|    3 | Transactions functionality |
+|24.4.|min 3 | Treeview widget homeview |
+|24.4.|    1 | Completed category controller |
+|25.4.|    2 | Completed balance_controller and balance.py tests |
+|25.4.|    2 | miscellaneous tasks and problems in the end |
