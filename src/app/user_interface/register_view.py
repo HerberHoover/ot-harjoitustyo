@@ -12,32 +12,35 @@ class RegisterView(tk.Frame):
 
 
     def create_widgets(self):
-        self.master.title("Register")
+        self.grid_columnconfigure(0, weight=1)
+        self.grid_columnconfigure(3, weight=1)
 
         self.username_label = tk.Label(self, text="Username:")
-        self.username_label.grid(row=0, column=0, padx=10, pady=10, sticky=tk.W)
+        self.username_label.grid(row=0, column=1, padx=10, pady=10, sticky=tk.W)
 
         self.username_entry = tk.Entry(self)
-        self.username_entry.grid(row=0, column=1, padx=10, pady=10)
+        self.username_entry.grid(row=0, column=2, padx=10, pady=10)
 
         self.password_label = tk.Label(self, text="Password:")
-        self.password_label.grid(row=1, column=0, padx=10, pady=10, sticky=tk.W)
+        self.password_label.grid(row=1, column=1, padx=10, pady=10, sticky=tk.W)
 
         self.password_entry = tk.Entry(self, show="*")
-        self.password_entry.grid(row=1, column=1, padx=10, pady=10)
+        self.password_entry.grid(row=1, column=2, padx=10, pady=10)
 
         self.confirm_password_label = tk.Label(self, text="Confirm Password:")
-        self.confirm_password_label.grid(row=2, column=0, padx=10, pady=10, sticky=tk.W)
+        self.confirm_password_label.grid(row=2, column=1, padx=10, pady=10, sticky=tk.W)
 
         self.confirm_password_entry = tk.Entry(self, show="*")
-        self.confirm_password_entry.grid(row=2, column=1, padx=10, pady=10)
+        self.confirm_password_entry.grid(row=2, column=2, padx=10, pady=10)
 
         self.register_button = tk.Button(self, text="Register", command=self.register)
-        self.register_button.grid(row=3, column=1, padx=10, pady=10, sticky=tk.E)
+        self.register_button.grid(row=3, column=1, padx=5, pady=10, sticky=tk.E)
 
         self.back_button = tk.Button(self, text="Back to Login", command=self.back_to_login)
-        self.back_button.grid(row=4, column=1, padx=10, pady=10, sticky=tk.E)
-    
+        self.back_button.grid(row=3, column=2, padx=10, pady=10, sticky=tk.W)
+
+
+
     def register(self):
         username = self.username_entry.get()
         password = self.password_entry.get()

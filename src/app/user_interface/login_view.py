@@ -15,24 +15,27 @@ class LoginView(tk.Frame):
 
 
     def create_widgets(self):
+        self.grid_columnconfigure(0, weight=1)
+        self.grid_columnconfigure(3, weight=1)
 
         self.username_label = tk.Label(self, text="Username:")
-        self.username_label.grid(row=0, column=0, padx=10, pady=10, sticky=tk.W)
+        self.username_label.grid(row=0, column=1, padx=10, pady=10, sticky=tk.W)
 
         self.username_entry = tk.Entry(self)
-        self.username_entry.grid(row=0, column=1, padx=10, pady=10)
+        self.username_entry.grid(row=0, column=2, padx=10, pady=10)
 
         self.password_label = tk.Label(self, text="Password:")
-        self.password_label.grid(row=1, column=0, padx=10, pady=10, sticky=tk.W)
+        self.password_label.grid(row=1, column=1, padx=10, pady=10, sticky=tk.W)
 
         self.password_entry = tk.Entry(self, show="*")
-        self.password_entry.grid(row=1, column=1, padx=10, pady=10)
+        self.password_entry.grid(row=1, column=2, padx=10, pady=10)
 
         self.login_button = tk.Button(self, text="Login", command=self.login)
         self.login_button.grid(row=2, column=1, padx=10, pady=10, sticky=tk.E)
 
         self.register_button = tk.Button(self, text="Register", command=self.register)
-        self.register_button.grid(row=3, column=1, padx=10, pady=10, sticky=tk.E)
+        self.register_button.grid(row=2, column=2, padx=10, pady=10, sticky=tk.W)
+
 
     def login(self):
         username = self.username_entry.get()
