@@ -6,7 +6,7 @@ class UIManager():
     def __init__(self) -> None:
         self.root = tk.Tk()
         self.root.title("Login")
-        self.root.geometry("400x400")
+        self.root.geometry("1200x650")
 
         create_tables()
 
@@ -32,7 +32,9 @@ class UIManager():
         self.login_view.pack_forget()
         self.home_view.user_id = user_id
         self.home_view.refresh_totals()
+        self.home_view.refresh_transactions()
         self.home_view.pack(fill=tk.BOTH, expand=True)
+
 
 
     def run(self):
