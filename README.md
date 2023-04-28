@@ -24,6 +24,10 @@ poetry install
 poetry shell
 ```
 
+```bash
+pip install -r ./requirements.txt
+```
+
 
 ## Invoke tasks
 
