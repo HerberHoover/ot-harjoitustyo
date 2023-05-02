@@ -1,5 +1,6 @@
 #categories.py
 from .database import execute_query
+from .database import fetch_query
 
 def add_category(user_id, category_name):
     query = """
@@ -8,4 +9,12 @@ def add_category(user_id, category_name):
     """
     params = (user_id, category_name)
     execute_query(query, params)
-    print(f"Category {category_name} added successfully.")
+
+def get_categories(user_id):
+    query = """
+    SELECT id, name
+    FROM categories
+    WHERE user_id = ?
+    """
+    params = (user_id,)
+    return fetch_query(query, params)
