@@ -2,7 +2,7 @@
 
 Will add pictures in the future
 ### Newest release
-
+[Newest release](https://github.com/HerberHoover/ot-harjoitustyo)
 
 ## Installation
 
