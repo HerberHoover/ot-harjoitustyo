@@ -2,7 +2,7 @@
 
 Will add pictures in the future
 ### Newest release
-[Newest release](https://github.com/HerberHoover/ot-harjoitustyo)
+[Newest release](https://github.com/HerberHoover/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Installation
 
