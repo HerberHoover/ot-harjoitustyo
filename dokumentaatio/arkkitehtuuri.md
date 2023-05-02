@@ -1,30 +1,6 @@
 ### Architectural Description
 
-
-
-
-## Structure of files
-
-src/
-
-
-├── app/
-
-│   ├── models/
-
-│   ├── user_interface/
-
-│
-
-├── tests/
-
-│
-
-├── database/
-
-│
-
-└── run.py
+Will make it better for next week! Had a few hicups on the way
 
 ## Models
 
