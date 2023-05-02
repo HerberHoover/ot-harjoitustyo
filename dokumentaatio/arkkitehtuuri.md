@@ -4,3 +4,4 @@
 
 
 
+I will create a proper architectural description with time, had some major issues with poetry
