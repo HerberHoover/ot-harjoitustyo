@@ -56,6 +56,3 @@ poetry run invoke coverage-report
 ```bash
 poetry run invoke lint
 ```
-
-
-### Newest release
