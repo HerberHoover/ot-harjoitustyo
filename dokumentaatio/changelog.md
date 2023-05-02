@@ -27,7 +27,7 @@
 - got started on categories with categories controller and categories adding function
 
 
-### week 6
+## week 6
 
 - Get categories functions added
 - Refactored code in BalanceController for better structure

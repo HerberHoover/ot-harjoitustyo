@@ -1,8 +1,8 @@
-### Architectural Description
+## Architectural Description
 
 Will make it better for next week! Had a few hicups on the way
 
-## Models
+### Models
 
 This directory contains the core application logic of the application. The files in this directory implement functionality related to user authentication, balance calculation, transactions, and categories.
 
@@ -12,7 +12,7 @@ This directory contains the core application logic of the application. The files
 
 - The balance_controller.py, transaction_controller.py, and category_controller.py modules define classes responsible for coordinating specific operations and interactions between the user interface, the underlying application logic, and the database.
 
-## User Interface
+### User Interface
 
 This directory contains the user interface code implemented using the tkinter library. It has separate views for registration, login, and the home screen, along with a UI manager and a transaction view.
 
@@ -20,7 +20,7 @@ This directory contains the user interface code implemented using the tkinter li
 
 - The ui_manager.py module is responsible for managing the overall UI structure and navigation,
 
-## Database
+### Database
 
 This directory contains the code to interact with the SQLite database. It defines the schema, creates the database and tables, and provides query execution and table management functionality.
 
