@@ -6,11 +6,10 @@ def create_user(username, password):
     password_hash = hashlib.sha256(password.encode()).hexdigest()
     existing_user = get_user_by_username(username)
     if existing_user:
-        print(f"User with username '{username}' already exists")
-        return
+        return False
     query = ''' INSERT INTO users(username, password_hash) VALUES(?,?) '''
     execute_query(query, (username, password_hash))
-
+    return True
 
 
 def get_user_by_username(username):
@@ -22,5 +21,5 @@ def verify_user(username, password):
     user = get_user_by_username(username)
     if user:
         password_hash = hashlib.sha256(password.encode()).hexdigest()
-        return user[2] == password_hash
+        return user[2] == password_hash # pylint: disable=unsubscriptable-object
     return False
