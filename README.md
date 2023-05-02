@@ -9,7 +9,7 @@ The application can be used by multiple users, each managing their own financial
 - [Work Log](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
 - [Architecture](./dokumentaatio/arkkitehtuuri.md)
-- [Käyttöohje](./dokumentaatio/kayttoohje.md)
+- [User Manual](./dokumentaatio/kayttoohje.md)
 
 ## Installation
 
