@@ -1,6 +1,6 @@
 # src/database/create_database.py
 import os
-from .database import create_connection, execute_query, fetch_query
+from .database import create_connection, execute_query
 
 def read_sql_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -15,15 +15,11 @@ def create_tables():
 
     sql_statements = schema_sql.split(';')
 
-    show_tables_query = '''SELECT name FROM sqlite_master WHERE type='table';'''
-
     if conn is not None:
         for statement in sql_statements:
             if statement.strip():
                 execute_query(statement)
 
-        tables = fetch_query(show_tables_query)
-        print("Tables:", tables)
     else:
         print("Error! Cannot create the database connection.")
 

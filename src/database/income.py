@@ -7,7 +7,7 @@ def add_income(user_id, amount, category_id, date, description):
     INSERT INTO transactions (user_id, category_id, amount, date, description, type)
     VALUES (?, ?, ?, ?, ?, 'income')
     """
-    params = (user_id, category_id, amount, date, description)  
+    params = (user_id, category_id, amount, date, description)
     execute_query(insert_income_query, params)
 
 def get_total_income(user_id):
