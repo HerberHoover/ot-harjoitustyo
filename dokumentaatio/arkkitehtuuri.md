@@ -4,4 +4,3 @@
 
 
 
-![Sekvenssikaavio](./kuvat/screenshot-2023-04-25212718.png)
