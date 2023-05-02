@@ -23,3 +23,12 @@
 |24.4.|    1 | Completed category controller |
 |25.4.|    2 | Completed balance_controller and balance.py tests |
 |25.4.|    2 | miscellaneous tasks and problems in the end |
+|27.4.|  0.5 | Completed category controller get category |
+|26.4.|    4 | Refactoring and started transaction functionilaity |
+|27.4.|    3 | Homeview modification |
+| 1.5.|    7 | Poetry problems |
+| 1.5.|    3 |  Completed transaction functionality  |
+| 2.5.|    4 | tests|
+| 2.5.|    3 | miscellaneous tasks and problems in the end + documentation|
+
+sum : 73
