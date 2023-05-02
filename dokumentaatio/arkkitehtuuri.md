@@ -7,33 +7,12 @@
 
 src/
 
-│
 
 ├── app/
 
 │   ├── models/
 
-│       └── user_logic.py
-
-│       └── balance.py
-
-│       └── balance_controller.py
-
-│       └── transaction_controller.py
-
-│       └── category_controller.py
-
-│   └── user_interface/
-
-│       └── registerview.py
-
-│       └── loginview.py
-
-│       └── homeview.py
-
-│       └── ui_manager.py
-
-│       └── transactionview.py
+│   ├── user_interface/
 
 │
 
@@ -42,20 +21,6 @@ src/
 │
 
 ├── database/
-
-│   ├── schema.sql
-
-│   ├── create_database.py
-
-│   ├── user.py  
-
-│   ├── income.py
-
-│   ├── expense.py
-
-│   ├── categories.py
-
-│   └── database.py
 
 │
 
