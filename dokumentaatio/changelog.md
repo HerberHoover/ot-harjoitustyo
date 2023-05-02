@@ -25,3 +25,17 @@
 - register and login_view touch up
 - home_view created treeview widget and refresh_transactions 
 - got started on categories with categories controller and categories adding function
+
+
+### week 6
+
+- Get categories functions added
+- Refactored code in BalanceController for better structure
+- Implemented transaction controller for tranactional functionality
+- Created TransactionView for income and expense management
+- Updated widget layout for a cleaner UI
+- Implemented function to fetch transactions with category names
+- Added add_income_callback() and add_expense_callback() methods to handle data from TransactionView
+- Changed the way categories are added to use the class's CategoryController instance
+- Changed the way transactions are fetched and displayed in the Treeview widget
+- Implemented error message for registering with existing username
