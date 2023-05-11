@@ -39,3 +39,14 @@
 - Changed the way categories are added to use the class's CategoryController instance
 - Changed the way transactions are fetched and displayed in the Treeview widget
 - Implemented error message for registering with existing username
+
+
+## week 7
+
+- Created category and category by transactions views
+- Created the functionality for the specific views, eg. get balance by category
+- Created functionality to get back from views
+- Implemented tests for the new functionality
+- Implemented proper architecture description (not yet)
+- Implemented test.md (not yet)
+- Finished the project to the point I am happy to return the project (not yet)
