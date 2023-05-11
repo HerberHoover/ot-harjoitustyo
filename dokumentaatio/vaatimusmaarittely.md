@@ -27,22 +27,28 @@ After a succesful login, the user is able to see their personal budget list (com
 ### Before logging in
 
 The user can create an username and password (completed)
-- unique username with min 4 length password 
 
 The user can log in, by entering an existing username and corresponding password
 - if username or password does not match, the system will notify the user (completed)
 
 ### After logging in 
 
-The user is able to view their personal budget list (completed)
+The user is able to view their personal budget list
 
-The user is able to add expenses and income (completed)
+The user is able to add expenses and income
+
+The user is able to create categories
 
 The user is able to categorize expeses
 
-The user is able to add accounts (unsuccesful for now)
+The user is able to view transactions and balance linked to a specific category
 
-The user is able to log out of their account (completed)
+The user is able to log out of their account
 
--> Further Development Ideas
-- The user can set expenses to cycle on a specified date 
+### Further Development Ideas
+->
+- The user is able to add accounts
+- The user can set expenses to cycle on a specified date / Recurring Transactions 
+- Savings / Budgeting goals 
+- View their tranasctions over different periods - monthly, yearly, or custom date ranges.
+- The user is able to modify and delete categories
