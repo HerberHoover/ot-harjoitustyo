@@ -1,6 +1,6 @@
-### User Manual
+# User Manual
 
-Will add pictures in the future
+
 ### Newest release
 [Newest release](https://github.com/HerberHoover/ot-harjoitustyo/releases/tag/viikko6)
 
@@ -63,3 +63,9 @@ Category: Choose an existing category to assign to the transaction.
 Description (optional): Add a description for the transaction.
 
 Click the "Add I/E" button to add the transaction to your records. The transaction will now appear in the list of transactions, organized by date.
+
+## Viewing Transactions by Category
+
+To view transactions by category, click the "View Categories" button. This will navigate you to the categories page, where you can see all the categories you've created.
+
+To view transactions from a specific category, click the button labeled with the name of the category you're interested in. This will display all transactions linked to that category.
