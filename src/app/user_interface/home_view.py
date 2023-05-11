@@ -9,6 +9,7 @@ from app.models.transaction_controller import TransactionController
 from datetime import datetime
 from tkinter import messagebox
 from .transaction_view import TransactionView
+from .category_view import CategoryView
 
 class HomeView(tk.Frame):
     def __init__(self, user_id, switch_to_login, master=None):
@@ -16,8 +17,8 @@ class HomeView(tk.Frame):
         self.master = master
         self.user_id = user_id
         self.balance_controller = BalanceController(user_id)
-        self.category_controller = CategoryController(user_id)  # Create a CategoryController instance
-        self.transaction_controller = TransactionController(user_id, self.category_controller)  # Pass the CategoryController instance
+        self.category_controller = CategoryController(user_id)
+        self.transaction_controller = TransactionController(user_id, self.category_controller)
         self.switch_to_login = switch_to_login
         self.create_widgets()
 
@@ -58,6 +59,9 @@ class HomeView(tk.Frame):
         self.balance_display.grid(row=4, column=2, padx=10, pady=10)
         self.balance_display.config(font=("TkDefaultFont", 14))
 
+        self.view_categories_button = tk.Button(self, text="View Categories", command=self.view_categories)
+        self.view_categories_button.grid(row=5, column=0, padx=10, pady=10)
+
         style = ttk.Style()
         style.configure('Treeview', show='headings')
 
@@ -74,7 +78,6 @@ class HomeView(tk.Frame):
 
         self.refresh_totals()
         self.refresh_transactions()
-
 
     def refresh_totals(self):
         if self.user_id == -1:
@@ -98,7 +101,6 @@ class HomeView(tk.Frame):
             else:
                 date_str = 'N/A'
             self.transactions_tree.insert('', 'end', values=(transaction[6], transaction[3], transaction[2], date_str, transaction[5]))
-
 
     def add_income(self):
         transaction_view = TransactionView(self.user_id, "income", self.add_income_callback)
@@ -127,3 +129,8 @@ class HomeView(tk.Frame):
         if category_name:
             category_controller = CategoryController(self.user_id)
             category_controller.add_category(category_name)
+
+    def view_categories(self):
+        self.pack_forget()
+        categories_view = CategoryView(self.user_id, self.master, self)
+        categories_view.pack()
