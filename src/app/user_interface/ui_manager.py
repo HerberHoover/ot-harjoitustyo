@@ -1,6 +1,6 @@
 # ui_manager.py
 import tkinter as tk
-from . import LoginView, RegisterView, HomeView
+from . import LoginView, RegisterView, HomeView, CategoryView
 from database import create_tables
 
 class UIManager:
