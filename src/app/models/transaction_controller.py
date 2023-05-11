@@ -2,6 +2,9 @@
 from datetime import datetime
 from database.income import add_income, get_all_income_transactions
 from database.expense import add_expense, get_all_expense_transactions
+from database.income import get_all_income_transactions_for_category
+from database.expense import get_all_expense_transactions_for_category
+
 from .category_controller import CategoryController
 
 class TransactionController:
@@ -44,3 +47,9 @@ class TransactionController:
             transactions_with_category_names.append(tuple(transaction_with_category_name))
 
         return transactions_with_category_names
+
+    def get_transactions_for_category(self, category_id):
+        incomes = get_all_income_transactions_for_category(self.user_id, category_id)
+        expenses = get_all_expense_transactions_for_category(self.user_id, category_id)
+        category_transactions = incomes + expenses
+        return category_transactions
