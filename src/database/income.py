@@ -25,3 +25,19 @@ def get_all_income_transactions(user_id):
     """
     result = fetch_query(query, (user_id,))
     return result
+
+def get_income_for_category(user_id, category_id):
+    query = """
+    SELECT SUM(amount) FROM transactions
+    WHERE user_id = ? AND type = 'income' AND category_id = ?
+    """
+    result = fetch_query(query, (user_id, category_id))
+    return result[0][0] if result[0][0] else 0
+
+def get_all_income_transactions_for_category(user_id, category_id):
+    query = """
+    SELECT id, user_id, category_id, amount, date, description, 'income' as type FROM transactions
+    WHERE user_id = ? AND category_id = ? AND type = 'income'
+    """
+    result = fetch_query(query, (user_id, category_id,))
+    return result
