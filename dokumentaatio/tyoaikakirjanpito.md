@@ -30,5 +30,14 @@
 | 1.5.|    3 |  Completed transaction functionality  |
 | 2.5.|    4 | tests|
 | 2.5.|    3 | miscellaneous tasks and problems in the end + documentation|
+| 7.5.|    3 | Created functionality for category and category tranactions views|
+| 7.5.|    4 | Created views for the functionality |
+| 8.5.|    5 | Problems with switch to home from categories view |
+|10.5.|    2 | Completed the functionality to get back from views |
+|11.5.|    4 | Tests|
+|11.5.|    3 | Doing the documnetation of the work |
 
-sum : 73
+
+|12.5.|      | Docstring to finnish the project |
+|12.5.|      | Doing the documnetation of the work |
+sum : 94
