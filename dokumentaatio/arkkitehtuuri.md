@@ -1,6 +1,6 @@
 ## Architectural Description
 
-Will make it better for next week! Had a few hicups on the way
+UML class diagram to represent my application.
 
 ### Models
 
@@ -30,6 +30,9 @@ This directory contains the code to interact with the SQLite database. It define
 
 - The database.py module provides functions for connecting to the SQLite database, executing queries, and fetching results. It bridges the application logic and the database, ensuring that the data is correctly stored and retrieved.
 
+
+
+### ADD DIAGRAMS AND DESCRIPTIONS ABOUT THEM
 
 ### Sequence Diagram
 
