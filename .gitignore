@@ -3,5 +3,5 @@ __pycache__
 .coverage
 htmlcov
 muistio.txt
-test.db
+budget.db
 delete_transactions.py

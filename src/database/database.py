@@ -2,7 +2,7 @@
 import sqlite3
 from sqlite3 import Error
 
-DATABASE_FILE = 'test.db'
+DATABASE_FILE = 'budget.db'
 
 def create_connection():
     conn = None
