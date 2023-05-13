@@ -38,7 +38,4 @@
 |11.5.|    3 | Doing the documnetation of the work |
 |13.5.|    2 | Docstring to finnish the project (used some help from GitHub Copilot to combat the repetitiveness of the task) |
 |13.5.|    3 | Doing the documnetation of the work |
-sum |   99 |
-
-additional time
- ( + 20 % for the part time studying of material related to the process of building the application)
+sum |   99 |additional time (+ 20 % for the part time studying of material related to the process of building the application) |
