@@ -1,6 +1,7 @@
 ## Architectural Description
 
-UML class diagram to represent my application.
+The architecture of the system is designed around a three-tiered layered structure, following the principles of separation of concerns and modularity. 
+
 
 ### Models
 
@@ -32,15 +33,16 @@ This directory contains the code to interact with the SQLite database. It define
 
 
 
-### ADD DIAGRAMS AND DESCRIPTIONS ABOUT THEM
+### Sequence diagrams
 
-### Sequence Diagram
+# This sequence diagram represents the flow of adding income and expense transactions. 
 
-![Sequence Diagram](./kuvat/Screenshot_2023-05-02_at_23.10.09.png)
+![Adding tranasactions](./kuvat/transactionsdiagram.png)
+
+# This sequence diagram represents the flow of getting transactions with category names.
+
+![Getting transactions with category names](./kuvat/gettransactionwcategory.png)
 
 ### Class Diagram
 
-
-![Class Diagram](./kuvat/screenshot-04-18234004.png)
-
-Hid both of these down here for now
+![UML Class diagram](./kuvat/classdiagram.png)
