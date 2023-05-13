@@ -18,8 +18,7 @@ Each of these test cases used the patch decorator to replace methods or function
 
 The testing coverage was 78 % 
 
-{kuva}
-
+![Coverage html](./kuvat/coveragehtml.png)
 
 ### User Interface Testing 
 
