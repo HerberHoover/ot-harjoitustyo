@@ -33,13 +33,13 @@ This directory contains the code to interact with the SQLite database. It define
 
 
 
-### Sequence diagrams
+## Sequence diagrams
 
-# This sequence diagram represents the flow of adding income and expense transactions. 
+### This sequence diagram represents the flow of adding income and expense transactions. 
 
 ![Adding tranasactions](./kuvat/transactionsdiagram.png)
 
-# This sequence diagram represents the flow of getting transactions with category names.
+### This sequence diagram represents the flow of getting transactions with category names.
 
 ![Getting transactions with category names](./kuvat/gettransactionwcategory.png)
 
