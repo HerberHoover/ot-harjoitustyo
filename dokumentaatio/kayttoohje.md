@@ -2,7 +2,7 @@
 
 
 ### Newest release
-[Newest release](https://github.com/HerberHoover/ot-harjoitustyo/releases/tag/viikko6)
+[Newest release](https://github.com/HerberHoover/ot-harjoitustyo/releases/tag/loppupalautus)
 
 ## Installation
 
