@@ -20,16 +20,16 @@ The application only has one user role, which can manage their personal finances
 
 The application opens with a login screen from where you can login or go to register screen
 
-After a succesful login, the user is able to see their personal budget list (completed)
+After a succesful login, the user is able to see their personal budget list
 
 ## Basic Functionality Provided By The Application
 
 ### Before logging in
 
-The user can create an username and password (completed)
+The user can create an username and password
 
 The user can log in, by entering an existing username and corresponding password
-- if username or password does not match, the system will notify the user (completed)
+- if username or password does not match, the system will notify the user
 
 ### After logging in 
 
@@ -46,7 +46,6 @@ The user is able to view transactions and balance linked to a specific category
 The user is able to log out of their account
 
 ### Further Development Ideas
-->
 - The user is able to add accounts
 - The user can set expenses to cycle on a specified date / Recurring Transactions 
 - Savings / Budgeting goals 
