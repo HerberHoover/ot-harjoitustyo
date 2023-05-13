@@ -3,7 +3,22 @@ from tkinter import ttk, messagebox
 from app.models.category_controller import CategoryController
 
 class TransactionView(tk.Toplevel):
+    """View for adding a transaction."""
+
     def __init__(self, user_id, transaction_type, callback, master=None):
+        """
+        Class constructor. Creates a new TransactionView.
+
+        Args:
+            user_id: 
+                The unique ID of the user.
+            transaction_type: 
+                The type of transaction to be added.
+            callback: 
+                The callback function to be invoked upon transaction addition.
+            master: 
+                The parent widget, default is None.
+        """
         super().__init__(master)
         self.user_id = user_id
         self.transaction_type = transaction_type
@@ -13,6 +28,7 @@ class TransactionView(tk.Toplevel):
         self.create_widgets()
 
     def create_widgets(self):
+        """Creates the widgets for the view."""
         self.amount_label = tk.Label(self, text="Amount:")
         self.amount_label.grid(row=0, column=0)
         self.amount_entry = tk.Entry(self)
@@ -36,6 +52,9 @@ class TransactionView(tk.Toplevel):
         self.add_button.grid(row=3, column=0, columnspan=2)
 
     def add_transaction(self):
+        """
+        Adds a transaction after validating the input.
+        """
         try:
             amount = float(self.amount_entry.get())
         except ValueError:

@@ -1,8 +1,5 @@
 import tkinter as tk
 from tkinter import ttk, simpledialog
-from database.expense import add_expense, get_total_expense
-from database.income import add_income, get_total_income
-from app.models.balance import get_balance
 from app.models.balance_controller import BalanceController
 from app.models.category_controller import CategoryController
 from app.models.transaction_controller import TransactionController
@@ -12,7 +9,20 @@ from .transaction_view import TransactionView
 from .category_view import CategoryView
 
 class HomeView(tk.Frame):
+    """View for managing user's home page."""
+
     def __init__(self, user_id, switch_to_login, master=None):
+        """
+        Class constructor. Creates a new HomeView.
+
+        Args:
+            user_id: 
+                The unique ID of the user.
+            switch_to_login: 
+                Function to switch to the login view.
+            master: 
+                The parent widget, default is None.
+        """
         super().__init__(master)
         self.master = master
         self.user_id = user_id
@@ -23,6 +33,7 @@ class HomeView(tk.Frame):
         self.create_widgets()
 
     def create_widgets(self):
+        """Creates the widgets for the view."""
         self.logout_button = tk.Button(self, text="Logout", command=self.logout)
         self.logout_button.grid(row=0, column=0, padx=10, pady=10, sticky=tk.W)
 
@@ -80,6 +91,9 @@ class HomeView(tk.Frame):
         self.refresh_transactions()
 
     def refresh_totals(self):
+        """
+        Updates the totals of income, expenses, and balance.
+        """
         if self.user_id == -1:
             return 
 
@@ -90,6 +104,9 @@ class HomeView(tk.Frame):
         self.balance_value.set("{:.2f}".format(balance))
 
     def refresh_transactions(self):
+        """
+        Updates the transactions display.
+        """
         self.transactions_tree.delete(*self.transactions_tree.get_children())
         if self.user_id == -1:
             return
@@ -103,34 +120,71 @@ class HomeView(tk.Frame):
             self.transactions_tree.insert('', 'end', values=(transaction[6], transaction[3], transaction[2], date_str, transaction[5]))
 
     def add_income(self):
+        """
+        Opens the dialog to add a new income transaction.
+        """
         transaction_view = TransactionView(self.user_id, "income", self.add_income_callback)
         transaction_view.mainloop()
 
     def add_expense(self):
+        """
+        Opens the dialog to add a new expense transaction.
+        """
         transaction_view = TransactionView(self.user_id, "expense", self.add_expense_callback)
         transaction_view.mainloop()
 
     def add_income_callback(self, amount, category, description):
+        """
+        Callback function to add a new income transaction.
+
+        Args:
+            amount: 
+                The amount of income to be added.
+            category: 
+                The category ID of the income.
+            description: 
+                The description of the income.
+        """
         self.transaction_controller.add_income(amount=amount, category_id=category, description=description)
         self.refresh_totals()
         self.refresh_transactions()
 
     def add_expense_callback(self, amount, category, description):
+        """
+        Callback function to add a new expense transaction.
+
+        Args:
+            amount: 
+                The amount of expense to be added.
+            category: 
+                The category ID of the expense.
+            description: 
+                The description of the expense.
+        """
         self.transaction_controller.add_expense(amount=amount, category_id=category, description=description)
         self.refresh_totals()
         self.refresh_transactions()
 
     def logout(self):
+        """
+        Logs out the user and switches to the login view.
+        """
         self.pack_forget()
         self.switch_to_login()
       
     def add_category(self):
+        """
+        Opens a dialog to add a new category.
+        """
         category_name = simpledialog.askstring("Add Category", "Enter new category name:", parent=self)
         if category_name:
             category_controller = CategoryController(self.user_id)
             category_controller.add_category(category_name)
 
     def view_categories(self):
+        """
+        Switches to the categories view.
+        """
         self.pack_forget()
         categories_view = CategoryView(self.user_id, self.master, self)
         categories_view.pack()

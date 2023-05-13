@@ -3,18 +3,29 @@ from tkinter import messagebox
 from database.user import verify_user, get_user_by_username
 from app.models.user_logic import login, register
 
-
-
 class LoginView(tk.Frame):
+    """View for managing user login."""
+
     def __init__(self, switch_to_register, switch_to_home, master=None):
+        """
+        Class constructor. Creates a new LoginView.
+
+        Args:
+            switch_to_register: 
+                Function to switch to the registration view.
+            switch_to_home: 
+                Function to switch to the home view.
+            master: 
+                The parent widget, default is None.
+        """
         super().__init__(master)
         self.master = master
         self.switch_to_register = switch_to_register
         self.switch_to_home = switch_to_home
         self.create_widgets()
 
-
     def create_widgets(self):
+        """Creates the widgets for the login view."""
         self.grid_columnconfigure(0, weight=1)
         self.grid_columnconfigure(3, weight=1)
 
@@ -36,8 +47,12 @@ class LoginView(tk.Frame):
         self.register_button = tk.Button(self, text="Register", command=self.register)
         self.register_button.grid(row=2, column=2, padx=10, pady=10, sticky=tk.W)
 
-
     def login(self):
+        """
+        Verifies the user's login credentials and switches to home view if valid.
+
+        If the credentials are invalid, it displays an error message.
+        """
         username = self.username_entry.get()
         password = self.password_entry.get()
 
@@ -50,8 +65,9 @@ class LoginView(tk.Frame):
         else:
             messagebox.showerror("Error", "Invalid username or password.")
 
-
-
     def register(self):
+        """
+        Switches to the registration view.
+        """
         self.pack_forget()
         self.switch_to_register()

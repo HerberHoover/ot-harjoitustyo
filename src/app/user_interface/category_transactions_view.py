@@ -7,7 +7,22 @@ from app.models.balance import get_category_balance
 from datetime import datetime
 
 class CategoryTransactionsView(tk.Frame):
+    """View for listing transactions of a specific category."""
+
     def __init__(self, user_id, category, master=None, prev_view=None):
+        """
+        Class constructor. Creates a new CategoryTransactionsView.
+
+        Args:
+            user_id: 
+                The unique ID of the user.
+            category: 
+                The category for which transactions are listed.
+            master: 
+                The parent widget, default is None.
+            prev_view: 
+                The previous view, default is None.
+        """
         super().__init__(master)
         self.user_id = user_id
         self.category = category
@@ -17,6 +32,7 @@ class CategoryTransactionsView(tk.Frame):
         self.create_widgets()
 
     def create_widgets(self):
+        """Creates the widgets for the view."""
         back_button = tk.Button(self, text="Back", command=self.go_back)
         back_button.grid(row=0, column=0)
 
@@ -39,6 +55,9 @@ class CategoryTransactionsView(tk.Frame):
         self.refresh_transactions()
 
     def refresh_transactions(self):
+        """
+        Refreshes the transactions list by removing the existing entries and loading new ones from the database.
+        """
         self.transactions_tree.delete(*self.transactions_tree.get_children())
         if self.user_id == -1:
             return
@@ -52,6 +71,9 @@ class CategoryTransactionsView(tk.Frame):
             self.transactions_tree.insert('', 0, values=(transaction[6], transaction[3], date_str, transaction[5]))
 
     def go_back(self):
+        """
+        Go back to the previous view.
+        """
         if self.prev_view:
             self.pack_forget()
             self.prev_view.pack()
