@@ -47,6 +47,6 @@
 - Created the functionality for the specific views, eg. get balance by category
 - Created functionality to get back from views
 - Implemented tests for the new functionality
-- Implemented proper architecture description (not yet)
-- Implemented test.md (not yet)
-- Finished the project to the point I am happy to return the project (not yet)
+- Implemented proper architecture description
+- Implemented test.md
+- Finished the project to the point I am happy to return the project
