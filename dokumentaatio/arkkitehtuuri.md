@@ -39,7 +39,7 @@ This directory contains the code to interact with the SQLite database. It define
 
 ![Adding tranasactions](./kuvat/transactionsdiagram.png)
 
-### This sequence diagram represents the flow of getting transactions with category names.
+### This sequence diagram represents the flow of getting category specific transactions.
 
 ![Getting transactions with category names](./kuvat/gettransactionwcategory.png)
 
