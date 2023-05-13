@@ -15,9 +15,9 @@ This directory contains the core application logic of the application. The files
 
 ### User Interface
 
-This directory contains the user interface code implemented using the tkinter library. It has separate views for registration, login, and the home screen, along with a UI manager and a transaction view.
+This directory contains the user interface code implemented using the tkinter library. It has separate views for registration, login, and the home screen, along with a UI manager, categories view, transaction view and a transactions by category view.
 
-- The registerview.py, loginview.py, homeview.py, and transactionview.py modules define the views for user registration, login, home screen, and transaction management. 
+- The modules register_view.py, login_view.py, home_view.py, category_view.py, category_transaction_view.py, and transaction_view.py respectively handle views for user registration, login, home screen, category, category transactions, and transaction management. 
 
 - The ui_manager.py module is responsible for managing the overall UI structure and navigation,
 
