@@ -2,6 +2,8 @@
 
 The architecture of the system is designed around a three-tiered layered structure, following the principles of separation of concerns and modularity. 
 
+## Rudimentary UML Class Diagram
+![UML Class diagram](./kuvat/classdiagramnoob.png)
 
 ### Models
 
@@ -37,12 +39,40 @@ This directory contains the code to interact with the SQLite database. It define
 
 ### This sequence diagram represents the flow of adding income and expense transactions. 
 
-![Adding tranasactions](./kuvat/transactionsdiagram.png)
+```mermaid
+sequenceDiagram
+  participant User_Interface
+  participant TransactionController
+  participant Database
+  User_Interface->>TransactionController: add_income()
+  TransactionController->>Database: add_income()
+  User_Interface->>TransactionController: add_expense()
+  TransactionController->>Database: add_income()
+```
 
 ### This sequence diagram represents the flow of getting category specific transactions.
 
-![Getting transactions with category names](./kuvat/gettransactionwcategory.png)
 
-### Class Diagram
+```mermaid
+sequenceDiagram
+  participant User_Interface
+  participant TransactionController
+  participant Database
+  participant CategoryController
+
+  User_Interface->>TransactionController: get_transactions_with_category_names()
+  TransactionController->>TransactionController: get_transactions()
+  TransactionController->>Database: get_all_income_transactions()
+  Database-->>TransactionController: Return income transactions 
+  TransactionController->>Database: get_all_expense_transactions()
+  Database-->>TransactionController: Return expense transactions
+  TransactionController->>CategoryController: get_categories()
+  CategoryController->>Database: get_categories()
+  Database-->>CategoryController: Return categories
+  CategoryController-->>TransactionController: Return categories
+  TransactionController-->>User_Interface: Return transactions with category names
+```
+
+### More accurate class diagram
 
 ![UML Class diagram](./kuvat/classdiagram.png)
